@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scenes/SupportScenes/fusionTurbo.tscn" type="PackedScene" id=1]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PoolVector2Array( -113, -31, 94, 121, 307, 77, 469, 142, 1213, 20, 1361, 100, 1683, 344, 2015, 515, 2420, 542, 2743, 128, 2932, -186, 3399, -293, 3920, -39, 8699, -171, 8157, -2312, 8899, -2197, 9213, 1541, -234, 914 )
+
+[node name="fusionTurbo" parent="." instance=ExtResource( 1 )]
+position = Vector2( 696, -291 )
+
+[node name="Camera2D" type="Camera2D" parent="fusionTurbo"]
+current = true
